@@ -1,0 +1,3053 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round';
+}
+
+/* globle Style start */
+a {
+    text-decoration: none;
+}
+
+.sections {
+    position: relative;
+    padding: 60px 0px;
+}
+
+/* globle Style start */
+.header {
+    position: relative;
+    padding: 10px 0px;
+    background-color: #b70014;
+    z-index: 999;
+}
+
+.logo img {
+    max-width: 200px;
+    object-fit: cover;
+}
+
+.clickBtn {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: none;
+    background-color: yellow;
+}
+
+.clickBtn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    z-index: 999;
+}
+
+.navMenu {
+    position: relative;
+}
+
+.navMenu .menuList {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.navMenu .menuList .menuListItem {
+    list-style: none;
+    padding: 8px 12px;
+}
+
+.navMenu .menuList .menuListItem .listItem {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.navMenu .menuList .menuListItem span i {
+    color: #fff;
+    transition: 0.5s;
+    margin-left: 5px;
+}
+
+.dropIcon {
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+
+.listItem {
+    position: relative;
+}
+
+.menuListItem {
+    position: relative;
+}
+
+.menuListItem .dropmenu-1 {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    padding: 0px;
+    margin: 0;
+    transition: 0.5s;
+    width: 150%;
+    z-index: 2;
+}
+
+.dropmenu-2 {
+    position: absolute;
+    top: 10px;
+    left: 65%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    padding: 0px;
+    margin: 0;
+    transition: 0.5s;
+    width: 150%;
+    z-index: 2;
+}
+
+.dropmenuActive {
+    display: block !important;
+    transition: 0.5s !important;
+}
+
+.dropmenu-1 .dropmenuListItem {
+    list-style: none;
+    padding: 8px 20px;
+    display: inline-flex;
+}
+.dropmenu-1 .dropmenuListItem .ListItem {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#markBtn2 {
+    display: none;
+}
+
+.markBtn {
+    position: relative;
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    background: linear-gradient(167deg, #F8FF80 0%, #F60000 39%);
+}
+
+.markBtn:hover {
+    color: #fff;
+}
+
+/* Banner section */
+
+.bannerSec {
+    position: relative;
+    background-image: url(../images/home-page-slider-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bannerInner {
+    position: relative;
+}
+
+.bannerInner h1 {
+    color: #FCC81C;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.bannerInner p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 20px;
+
+}
+
+.bannerInner .bannerBtn {
+    position: relative;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    background: #CE2127;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.bannerImg img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* upWorkinnerSec */
+
+.upWorkinnerSec {
+    position: relative;
+    padding: 30px 0px;
+    background-color: #b70014;
+}
+
+.upWorkinner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.upWorkinner h4 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.UpWorkBtn,
+.digimarBtn {
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    background: #14A800;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.digimarBtn {
+    background-color: #ff0000 !important;
+}
+
+.digimarBtn:hover {
+    color: #ff0000 !important;
+    background-color: #fff !important;
+    border-color: #ff0000;
+}
+
+.UpWorkBtn:hover {
+    color: #14A800;
+    border: 2px solid #14A800;
+    background: #fff;
+}
+
+
+/* webServices_Sec */
+
+.webServices_Sec {
+    position: relative;
+    padding: 50px 0px;
+    background-color: #fff;
+}
+
+.headSec {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.headSec h4 {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+.headSec p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+.servicesInner {
+    position: relative;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.servicesInner img {
+    object-fit: contain;
+    margin-bottom: 20px;
+    width: 70px;
+}
+.servicesInner h5 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+.servicesInner p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+.servicesInner a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #CE2127;
+    margin-bottom: 20px;
+}
+
+/*  */
+
+.buisIndiea {
+    position: relative;
+    background-color: #b70014;
+}
+
+.buisIndieaInner {
+    position: relative;
+    padding: 30px;
+
+}
+
+.buisIndieaInner h4 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.buisIndieaInner p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.businessBtn {
+    display: inline-block;
+    padding: 8px 25px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: #FFE88C;
+    color: #000;
+    margin-top: 20px;
+}
+
+.businessBtn:hover{
+    color: #ff0000;
+}
+
+.buisIndieaImg img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* testinomialSec  */
+
+.testinomialSec {
+    position: relative;
+    padding: 50px 0px;
+
+}
+
+.testcards {
+    position: relative;
+    background-color: #fafafa;
+    padding: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+.width {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+.testcards .cards {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.testcards .cards .cardRatining {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.testcards .cards .cardRatining h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #17313b;
+    margin-bottom: 0px;
+}
+
+
+.testcards .cards .cardRatining ul {
+    position: relative;
+    padding: 0;
+    margin: 0px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.testcards .cards .cardRatining ul li {
+    position: relative;
+    list-style: none;
+    margin: 3px;
+}
+
+.testcards .cards .cardRatining ul li span i {
+    color: #F60000;
+}
+
+/* footer */
+
+.contacts {
+    position: relative;
+    padding: 50px 0px;
+    background-color: #e2242a;
+}
+
+.contactCards {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactCards .cardIcons {
+    position: relative;
+    width: 150px;
+    max-width: 100%;
+    height: 150px;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b91e23;
+    border-radius: 50%;
+}
+
+.contactCards .cardIcons i {
+    color: #fff;
+    font-size: 50px;
+}
+
+.contactCards h5 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footerDetails {
+    position: relative;
+    padding: 50px 0px;
+}
+
+.footerInner {
+    position: relative;
+    margin-top: 20px;
+}
+
+.footerInner h5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #e2242a;
+    margin-bottom: 15px;
+
+}
+
+.footerInner ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.footerInner ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.footerInner ul li a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #54595F;
+}
+
+.footerInner ul li a:hover {
+    color: #e2242a;
+}
+
+.footCopyright {
+    position: relative;
+    padding: 10px 0px;
+}
+
+.footerIcons {
+    position: relative;
+    margin-top: 20px;
+}
+
+.footerIcons h5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    color: #e2242a;
+    margin-bottom: 15px;
+}
+
+.footerIcons ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerIcons ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 10px 0px 0px;
+    flex-wrap: wrap;
+}
+
+.footerIcons ul li a {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #000;
+}
+
+.footCopyright p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #54595F;
+    text-align: center;
+}
+
+/* web Desigening Services pages */
+.pageHading {
+    position: relative;
+}
+
+.heading {
+    position: relative;
+    padding: 30px 0px;
+}
+
+.heading h3 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #212529;
+    text-align: center;
+}
+
+.heading p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #212529;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.requestQuoteSec {
+    position: relative;
+    background-color: #ffe88c;
+    padding: 20px 0px;
+}
+
+.requestQuoteinner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.requestQuoteinner h5 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #212529;
+    text-align: center;
+}
+
+.requestQuoteinner .quoteBtn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #212529;
+    text-align: center;
+    padding: 15px 25px;
+    border: 1px solid #212529;
+    border-radius: 5px;
+}
+
+/* second Section */
+.choosCssHouesSec {
+    position: relative;
+    padding: 30px 0px;
+}
+
+.choosCssHouesContent {
+    position: relative;
+}
+
+.choosCssHouesContent ul {
+    position: relative;
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.choosCssHouesContent ul li {
+    list-style: none;
+    padding: 4px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #212529;
+}
+
+.choosCssHouesContent ul li i {
+    font-size: 20px;
+    color: #000;
+}
+
+.choosCssHouesContent h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+}
+
+.choosCssHouesContent h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+}
+
+.choosCssHouesContent p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.choosCssHouesContent2 {
+    position: relative;
+    text-align: center !important;
+}
+
+.choosCssHouesImg {
+    position: relative;
+    width: 100%;
+}
+
+.choosCssHouesImg2 {
+    width: 80% !important;
+    margin: auto !important;
+}
+
+.choosCssHouesImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* portfolio */
+
+.portfolioSec {
+    position: relative;
+    padding: 15px 0px;
+}
+
+.digtPortSec {
+    position: relative;
+    background-color: #dce5e8;
+    padding: 50px 0px;
+}
+
+.portfolioHead {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.portfolioHead h4 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portfolioHead p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portfolioHead ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolioHead ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+.portfolioHead ul li .portBtn{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 24px;
+    border: 1px solid #AEA9A9A1;
+    border-radius: 4px;
+    color: #201e1e;
+}
+
+.digtportPPCInner {
+    display: flex;
+    align-items: center;
+}
+
+.digtportPPCInnerContent {
+    position: relative;
+    padding: 20px 0px;
+}
+
+.digtportPPCInnerContent h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.digtportPPCInnerContent p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.redLink{
+    display: inline-block;
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-decoration: underline;
+}
+
+.portfolioImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolioInner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portInnerContent {
+    position: relative;
+    text-align: center;
+}
+
+.portInnerContent h4 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portInnerContent p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+}
+
+.portInnerContent .portfolioBtn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    padding: 15px 25px;
+    background-color: #017ca6;
+    border-radius: 5px;
+    border: 1px solid #017ca6;
+}
+
+.digtPortInnerContent {
+    position: relative;
+    text-align: center;
+}
+
+.digtPortInnerContent h5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+}
+
+.digtPortInnerContent p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.digtPortInnerContent a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* plansSection */
+
+.plansSection {
+    position: relative;
+    padding: 50px 0px 20px 0px;
+    background: #dce5e8;
+}
+
+.plansCards {
+    position: relative;
+    text-align: center;
+}
+
+.plansCards .planhead {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.plansCards .planhead h4 {
+    color: #FFF;
+    line-height: 1.2;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: start;
+    padding-top: 10px;
+}
+
+.plansCards .planhead .planPrice {
+    position: relative;
+    padding: 10px 40px 0px 10px;
+}
+
+.plansCards ul {
+    position: relative;
+    padding: 10px;
+    margin: 0;
+}
+
+.plansCards ul li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.plansCards ul li span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+}
+
+.plansCards .planBtn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+
+.plansCardsColor1 {
+    background-color: #7dcdf0;
+}
+
+.plansCardsColor2 {
+    background-color: #6cc0e5;
+}
+
+.plansCardsColor3 {
+    background-color: #46a5ce;
+}
+
+.plansCardsColor4 {
+    background-color: #c5d445;
+}
+
+.plansCardsColor5 {
+    background-color: #b7c53e;
+}
+
+.plansCardsColor6 {
+    background-color: #99a628;
+}
+
+.plansCardsColor7 {
+    background-color: #f8adb8;
+}
+
+.plansCardsColor8 {
+    background-color: #eaa2ac;
+}
+
+.plansCardsColor9 {
+    background-color: #ce7480;
+}
+
+.plansFoot {
+    position: relative;
+    color: #000;
+    line-height: 1.2;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: start;
+    padding: 20px 0px;
+    width: 45%;
+    text-align: center;
+    margin: auto;
+}
+
+/* owl carousal style */
+
+.owl-carousel .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 105%;
+}
+
+/* table style for degital marketing tamplate */
+
+.tableInner {
+    position: relative;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.table {
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table thead {
+    position: relative;
+}
+
+.table thead td {
+    position: relative;
+    text-align: center;
+    box-shadow: -6px 0px 15px -8px #4d4b4b;
+    background: #fff;
+    padding: 20px 0px;
+    border: 0;
+}
+
+.table thead td h5 {
+    font-weight: 600;
+    font-size: 21px;
+    color: #14212b;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.table tr td h4 {
+    font-weight: 600;
+    font-size: 21px;
+    color: #14212b;
+    line-height: 1.1;
+}
+
+.table thead td p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #14212b;
+    line-height: 1.2;
+}
+
+.table thead td h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+}
+
+.table thead td span {
+    display: inline-block !important;
+    font-weight: 400;
+    font-size: 16px;
+    color: #14212b;
+    line-height: 1.2;
+}
+
+.table thead td a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: #BA0015;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.table tr {
+    display: flex;
+}
+
+.table tr td:first-child {
+    background-color: #f9f9f9 !important;
+    text-align: start !important;
+}
+
+.table tr td {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px !important;
+    width: 100%;
+    border: 0 !important;
+}
+
+.table tr td i {
+    font-size: 20px;
+}
+
+.table tr td .fa-xmark,
+.fa-times {
+    color: #fbcf34;
+}
+
+.table tr td .fa-check {
+    color: #0090f1;
+}
+
+/* contactBannerSec */
+
+.contactBannerSec {
+    position: relative;
+    padding: 70px 0px;
+    background-image: url(../images/home-page-slider-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.contactBannerSec h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contactBannerSec h5 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contactBannerSec ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contactBannerSec ul li {
+    list-style: none;
+    padding: 8px 40px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    margin: 10px;
+    background-color: #14A800;
+}
+
+.contactBannerSec ul li a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+}
+
+/*  tabSection*/
+
+.tabSection {
+    position: relative;
+    padding: 30px 0px;
+    background-color: #fff;
+}
+
+.heading {
+    position: relative;
+    text-align: center;
+}
+
+.heading h4 {
+    color: #000;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* tab style */
+
+.tabInner {
+    position: relative;
+    padding: 50px 0px 0px 0px;
+}
+
+button.nav-link {
+    padding: 10px 30px;
+    border: 1px solid #777777 !important;
+    border-radius: 100px !important;
+    margin: 10px 20px !important;
+    color: #000;
+    font-weight: 700;
+}
+
+.tabCard {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.tabCard .imgLink {
+    position: relative;
+    display: inline-block;
+}
+
+.tabCard .imgLink img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid #696666;
+}
+
+.tabCard .cardBody {
+    position: relative;
+    padding: 20px 0px;
+}
+
+.tabCard .cardBody h5 {
+    color: #404d5a;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.tabCard .cardBody .cardVisitBtn {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* form page css */
+
+.formSec {
+    position: relative;
+    padding: 40px 0px;
+}
+
+.formHead {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.formHead h4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.formHead p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2f2d2d;
+    margin-bottom: 20px;
+}
+
+.formHead a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ff0000;
+    text-decoration: none;
+    display: block;
+}
+
+.form {
+    position: relative;
+}
+
+.inputTypes {
+    position: relative;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 2px solid #e5e5e5;
+    background-color: #fafafa;
+}
+
+.formBtn {
+    background-color: #fc9928;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+/* checkbox-container {
+    display: flex;
+    align-items: center;
+} */
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    font-size: 16px;
+}
+
+.map {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    min-height: 400px;
+}
+
+/* estimonialSec */
+
+.testimonialSec {
+    position: relative;
+    padding: 50px 0px;
+}
+
+.testimonialHead {
+    position: relative;
+}
+
+.testimonialHead h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #212529;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.testimonialHead p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #212529;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.reviweContent {
+    position: relative;
+    margin-top: 50px;
+}
+
+.reviweContent p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #212529;
+    line-height: 1.5;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.reviweContent .reviewWriteBy {
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.reviweContent .reviewWriteBy p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #212529;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.reviweContent .reviewWriteBy span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFBA00;
+    line-height: 1.5;
+    text-align: center;
+    display: block;
+}
+
+/* teamSec */
+
+.teamCard {
+    position: relative;
+    text-align: center;
+}
+
+.teamCardImg img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #14A800;
+    object-fit: cover
+}
+
+.teamCard h4 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.teamCard h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.4;
+    margin: 10px 0px;
+}
+
+.teamCard p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* accordinSec */
+
+.accordinSec {
+    position: relative;
+    padding: 50px 0px;
+}
+
+.accordinInner {
+    position: relative;
+}
+
+.accordinInner h4 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #14A800;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.accordinInner .accordinCard {
+    position: relative;
+
+}
+
+.accordinInner .accordinCard .accordinHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.accordinInner .accordinCard .accordinHead h5 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    clear: #000;
+}
+
+.accordinInner .accordinCard .accordinHead .icons {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.accordinInner .accordinCard .accordinHead .icons .fa-plus , .fa-minus{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.plusActive {
+    display: none;
+}
+
+.accordinInner .accordinCard .accordinHead .icons .fa-minus {
+    display: none;
+}
+
+.minusActive {
+    display: block !important;
+}
+
+
+.accordinInner .accordinCard .accordinBody {
+    position: relative;
+    display: none;
+    padding: 20px;
+}
+
+.accordinBodyActive {
+    display: block !important;
+}
+
+.applyBtn {
+    margin-top: 10px;
+    font-size: 15px;
+    background: #BA0015;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    margin-top: 20px;
+}
+
+/* accodion Form */
+
+.accordinFormSec {
+    position: relative;
+    padding: 50px 0px;
+}
+
+.formInner {
+    position: relative;
+    padding: 50px;
+    border: 1px solid #000;
+}
+
+.accordionhead {
+    position: relative;
+    text-align: center;
+}
+
+.accordionhead h3 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000;
+    text-align: center;
+}
+
+.accordionhead p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    text-align: center;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload .custom-file-upload1 {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.accordinFormBtn {
+    background-color: #ce2126;
+    padding: 10px 30px;
+    text-align: center;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+
+/* clientreviewSec */
+
+.clientreviewSec {
+    position: relative;
+    padding: 70px 0px;
+    background-image: url(../images/home-page-slider-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reviewInner {
+    position: relative;
+}
+
+.reviewInner h4 {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+}
+
+.reviewInner p {
+    font-family: '';
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.starsInner {
+    position: relative;
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.starsInner p {
+    font-family: 'Love Light';
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.starsInner h5 {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+.starsInner .starsImg img {
+    width: 100%;
+    object-fit: contain;
+    cursor: move;
+}
+
+.owl4 .owl-nav {
+    color: #fff;
+}
+
+/* /digital-marketing-training page */
+
+.digitalMarkInner {
+    position: relative;
+}
+
+.digitalMarkInner h4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #FCC81C;
+    width: 70%;
+}
+
+.digitalMarkInner h6 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.digitalMarkInner ul {
+    position: relative;
+    padding: 0;
+    margin: 0px 0px 15px 0px;
+}
+
+.digitalMarkInner ul li {
+    list-style: none;
+    color: #fff;
+}
+
+.phoNumBtn {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.digmarkForm {
+    position: relative;
+    background: #f3f3f3;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.digmarkForm .digmarkFormHead {
+    position: relative;
+}
+
+.digmarkForm .digmarkFormHead h5 {
+    color: #092960;
+    font-family: "Varela Round", Sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.digmarkForm .digmarkFormHead p {
+    color: #092960;
+    font-family: "Varela Round", Sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.digmarkFormInner {
+    position: relative;
+    padding: 20px;
+}
+
+ .digtInput {
+    position: relative;
+    background: #fff;
+    color: #000;
+    border: 2px solid;
+    border-color: transparent;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.digmarkFormInner .digtInput:hover {
+    border-color: #00ff00 !important;
+}
+
+.digmarkFormInner .digtInput::placeholder,
+select::placeholder {
+    color: #666666;
+}
+
+/* teacherExpSec */
+
+.teacherExpSec {
+    position: relative;
+}
+
+.heading {
+    position: relative;
+}
+
+.heading h4 {
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.heading p {
+    color: #1a321f;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.rotatCards {
+    position: relative;
+    background: url(../images/yy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 0px 19px 5px #d1c1c1;
+    transition: 0.5s;
+}
+
+.rotatCards:hover {
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+
+.rotatCards .rotatCardsInner {
+    position: relative;
+    min-height: 350px;
+}
+
+.rotatCards .rotatCardsInner .imgIcon ,
+.fa-money-check {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+
+}
+
+.rotatCards .rotatCardsInner .imgIcon {
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.imgIconActive {
+    display: none !important;
+    transition: 0.5s;
+}
+
+.rotatCards .rotatCardsInner .fa-money-check {
+    color: #fff;
+    font-size: 50px;
+    display: none;
+    transition: 0.5s;
+}
+
+.iActive {
+    display: block !important;
+    transition: 0.5s;
+}
+
+.digtMarkAccordion {
+    position: relative;
+}
+
+.digtMarkAccordionInner {
+    position: relative;
+    margin: 10px 0px;
+}
+
+.digtMarkAccordion .digtMarkAccordionHead {
+    position: relative;
+    background: #F4F4F4;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.digtMarkAccordion .digtMarkAccordionHead h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.digtMarkAccordion .digtMarkAccordionBody {
+    position: relative;
+    display: none;
+    padding: 15px;
+}
+
+.digtMarkAccordion .digtMarkAccordionBody p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+}
+
+.fa-arrow-up {
+    display: none;
+}
+
+.icons {
+    position: relative;
+}
+
+/* corsesOpetSec */
+
+.corsesOpetSec {
+    position: relative;
+}
+
+.classColor1 {
+    background-color: #158099;
+}
+
+.classColor2 {
+    background-color: #14975d;
+}
+
+.classCards {
+    position: relative;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / .5);
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 10px;
+}
+
+.classCards h2 {
+    font-size: 48px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.classCards p {
+    text-align: center;
+    color: #FFF;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.classCards h5 {
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.hideForm {
+    position: fixed;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 999;
+}
+
+.closeBtn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    transform: translate(-50, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+}
+
+.hideFormActive {
+    display: block !important;
+}
+
+/* fifth Section */
+
+.whyChooseSec {
+    position: relative;
+    background: url(../images/yy\ \(1\).png);
+    background-repeat: repeat;
+}
+
+.headSection {
+    position: relative;
+    text-align: center;
+}
+
+.headSection h4 {
+    color: #fff;
+    font-size: 28px;
+}
+
+.headSection p {
+    color: #fff;
+}
+
+.chooseList {
+    position: relative;
+}
+
+.chooseList ul {
+    padding: 0;
+    margin: 0;
+}
+
+.chooseList ul li {
+    list-style: none;
+    color: #fff;
+    line-height: 1.4;
+    font-size: 20px;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* aftercorsSec */
+
+.aftercorsSec {
+    position: relative;
+}
+
+.aftercorsHead {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 350px; */
+}
+
+.aftercorsHead h4 {
+    color: #000;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+}
+
+.aftercorsList {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.aftercorsList ul {
+    position: relative;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.aftercorsList ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+    color: #790000;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.aftercorsList ul li img {
+    margin-right: 15px;
+    display: block;
+}
+
+/* CertifiedSec */
+
+.CertifiedSec {
+    position: relative;
+    background: url(../images/fsdk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.certifideLogos {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.certifideLogos img {
+    object-fit: contain;
+    width: 90%;
+}
+
+/* jobRolsSec */
+.jobRolsSec {
+    position: relative;
+}
+
+.jobCards {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    height: 100%;
+    min-height: 220px;
+}
+
+.jobCards img {
+    width: 80px;
+    object-fit: cover;
+}
+
+.jobCards h4 {
+    font-size: 24;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.jobCardsColor1 {
+    background-color: #6870f0;
+}
+
+.jobCardsColor2 {
+    background-color: #19e4b6;
+}
+
+.jobCardsColor3 {
+    background-color: #f75480;
+}
+
+.jobCardsColor4 {
+    background-color: #ae54f6;
+}
+
+/* Asked questions in accordins */
+
+.accordBorder {
+    position: relative;
+    border: 1px solid #d5d8dc;
+    margin: 0;
+}
+
+.accorHeadBordr {
+    position: relative;
+    border-top: 0px solid #d5d8dc;
+    border-left: 0px solid #d5d8dc;
+    border-right: 0px solid #d5d8dc;
+    border-bottom: 1px solid #d5d8dc;
+}
+
+/* customers stisfied  */
+
+.customerSetisfiedSec {
+    position: relative;
+    background: url(../images/yy\ \(1\).png);
+    background-repeat: repeat;
+}
+
+.reviewsInner {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #877A7A;
+    ;
+    height: 100%;
+}
+
+.reviewsInner p {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 400;
+}
+/* blog Page */
+.blogCard{
+    position: relative;
+}
+
+.blogCard .postInnerLink{
+    position: relative;
+    display: inline-block;
+}
+
+.blogCard img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogCard .blogBody {
+    position: relative;
+    padding: 20px;
+}
+
+.blogCard .blogBody p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000;
+    text-align: center;
+}
+
+/*  */
+
+.blogBodycontent {
+    position: relative;
+    padding: 20px 0px;
+}
+
+.blogBodycontent p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+}
+
+.blogBodycontent h4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000;
+}
+
+.blogBodycontent ul {
+  position: relative;
+  margin: 0;
+}
+
+.blogBodycontent ul li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+}
+
+.blogInnerlist{
+    position: relative;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #E5E5E5;
+}
+
+.blogInnerlist h4{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.blogInnerlist ul{
+    position: relative;
+}
+
+.blogInnerlist ul li{
+    list-style: circle;
+    padding: 10px 0px;
+    border-bottom:1px solid #E5E5E5 ;
+    margin: 10px 0px;
+}
+
+.blogInnerlist ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+}
+
+.blogForm {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background: #0a485e;
+    margin-top: 15px;
+}
+.blogForm h4{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.blogFormBtn {
+    background-color: #fc9928;
+    padding: 10px 30px;
+    text-align: center;
+    border: 0;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+   width: 100%;
+    margin-top: 10px;
+}
+/* marketingStrategiesCase */
+.redBanner{
+    position: relative;
+    background: url(../images/background1.png);
+    background-repeat: repeat;
+    background-size: cover;
+    min-height: 350px;
+}
+.planCase{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.planCase h2{
+    font-size:40px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.2;
+    text-align: end;
+}
+
+/*  */
+.postheader{
+    position: relative;
+    background-color: #1c1c1c;
+    border-bottom:10px solid #2d2d2d ;
+}
+
+.headerInner {
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items:center;
+    justify-content: space-between;
+   
+}
+
+.headerInner .headerLogo{
+    position: relative;
+    display: inline-block;
+    width: auto;
+}
+
+.headerInner a img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.headerInner ul {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    
+    padding: 0;
+    margin: 0;
+}
+
+.headerInner ul li{
+  list-style: none;
+  text-align: end;
+  padding: 10px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headerInner ul li , a{
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.headerInner ul a{
+    display: inline-block;
+}
+.headerInner ul li:first-child{
+    border-right: 2px solid #fff;
+    
+}
+.postersLinks{
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: #f3f3f3;
+    flex-wrap: wrap;
+}
+.postersLinks li{
+    list-style: none;
+    padding: 10px;
+    
+}
+.postersLinks li:first-child{
+    background: #e4e8eb;
+}
+
+.postersLinks li a{
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.postinner{
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.postinner .postInnerLogo img{
+    object-fit: contain;
+}
+
+.postinner h4{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #000;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.postinner2{
+    background: url(../images/black-bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.postinner h5{
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.postinner p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000;
+    margin-top: 20px;
+    text-align: center;
+}
+.postinner img{
+    object-fit: cover;
+    width: 100%;
+}
+.footerInner{
+    position: relative;
+}
+
+.footerInner a{
+    position: relative;
+    display: inline-block;
+}
+
+.footerInner a img{
+    object-fit: contain;
+}
+
+.footerInner p{
+    margin: 20px 0px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 60%;
+}
+
+.footerInner p a{
+    display: block;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+  
+}
+.footerInner p a:hover{
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    .headerInner {
+        flex-wrap: wrap;
+    }
+    .headerInner ul {
+        margin-top: 20px;
+    }
+    .planCase h2 {
+        font-size: 38px;
+    }
+    .postinner h4 {
+        font-size: 34px;
+    }
+    .sections {
+        padding: 40px 0px;
+    }
+    .footerInner p{
+        margin: 15px 0px;
+        max-width: 70%;
+    }
+    .classCards h2 {
+        font-size: 44px;
+    }
+
+    .clickBtn {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        display: block;
+    }
+
+    .navMenu {
+        position: relative;
+        display: none;
+        width: 100%;
+    }
+
+    .classCards h5 {
+        font-size: 38px;
+    }
+
+    .navMenu .menuList {
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        background-color: #b70014;
+    }
+
+    #markBtn1 {
+        display: none;
+    }
+
+    #markBtn2 {
+        display: block;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    .activeBars {
+        display: none !important;
+    }
+
+    .fa-x {
+        display: none;
+    }
+
+    .activeX {
+        display: block !important;
+    }
+
+    .bannerSec {
+        padding: 50px 0px;
+    }
+
+    .bannerInner h1 {
+        font-size: 34px;
+    }
+
+    .upWorkinner h4 {
+        font-size: 30px;
+    }
+
+    .upWorkinner {
+        justify-content: center;
+    }
+
+    .webServices_Sec {
+        padding: 40px 0px;
+    }
+
+    .headSec h4 {
+        font-size: 36px;
+    }
+
+    .buisIndieaInner h4 {
+        font-size: 38px;
+    }
+
+    .choosCssHouesContent h3 {
+        font-size: 28px;
+    }
+
+    .testcards {
+        padding: 40px;
+        width: 90%;
+    }
+
+    .plansSection {
+        padding: 40px 0px 18px 0px;
+    }
+
+    .requestQuoteinner {
+        justify-content: center;
+    }
+
+    .portInnerContent h4 {
+        font-size: 36px;
+    }
+
+    .plansFoot {
+        font-size: 24px;
+        width: 70%;
+
+    }
+
+    .contactCards .cardIcons {
+        width: 130px;
+        height: 130px;
+    }
+
+    .contactCards .cardIcons i {
+        font-size: 44px;
+    }
+
+    .contactBannerSec {
+        padding: 50px 0px;
+    }
+
+    .formSec {
+        position: relative;
+        padding: 50px 0px;
+    }
+
+    .reviweContent p {
+        width: 90%;
+    }
+
+    .testimonialHead h3 {
+        font-size: 38px;
+    }
+
+    .accordinFormSec {
+        padding: 40px 0px;
+    }
+
+    .formInner {
+        padding: 40px;
+    }
+
+    .accordionhead h3 {
+        font-size: 24px;
+    }
+
+    .accordinInner h4 {
+        font-size: 32px;
+    }
+
+    .clientreviewSec {
+        padding: 50px 0px;
+    }
+
+    .reviewInner h4 {
+        font-size: 40px;
+    }
+
+    .starsInner p {
+        font-size: 34px;
+    }
+
+    .starsInner h5 {
+        font-size: 25px;
+    }
+
+    .reviewInner p {
+        font-size: 20px;
+    }
+
+    .starsInner .starsImg img {
+        width: 85%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .sections {
+        padding: 30px 0px;
+    }
+    .headerInner a img {
+        width: 70%;
+    }
+    .redBanner {
+        min-height: 200px;
+    }
+    .postinner {
+        min-height: 350px;
+    }
+    .headerInner ul {
+        flex-wrap: wrap;
+    }
+    .footerInner p{
+        margin: 15px 0px;
+        max-width: 80%;
+    }
+    .postinner h4 {
+        font-size: 32px;
+    }
+    .planCase h2 {
+        font-size: 36px;
+    }
+    .classCards h2 {
+        font-size: 40px;
+    }
+
+    .bannerSec {
+        padding: 35px 0px;
+    }
+
+    .bannerInner h1 {
+        font-size: 32px;
+    }
+
+    .bannerImg img {
+        margin-top: 30px;
+    }
+
+    .upWorkinner h4 {
+        font-size: 28px;
+    }
+
+    .classCards h5 {
+        font-size: 36px;
+    }
+
+    .UpWorkBtn,
+    .digimarBtn {
+        padding: 12px 30px;
+    }
+
+    .webServices_Sec {
+        padding: 30px 0px;
+    }
+
+    .headSec h4 {
+        font-size: 34px;
+    }
+
+    .buisIndieaInner h4 {
+        font-size: 34px;
+    }
+
+    .testcards {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .buisIndieaInner {
+        padding: 20px;
+    }
+
+    /*  */
+
+    .heading h3 {
+        font-size: 34px;
+    }
+
+    .requestQuoteinner h5 {
+        font-size: 28px;
+    }
+
+    .plansCards .planhead h4 {
+        font-size: 26px;
+    }
+
+    .portInnerContent {
+        padding: 30px 0px;
+    }
+
+    .choosCssHouesContent h3 {
+        font-size: 26px;
+    }
+
+    .plansSection {
+        padding: 35px 0px 15px 0px;
+    }
+
+    .portInnerContent h4 {
+        font-size: 36px;
+    }
+
+    .choosCssHouesContent h4 {
+        font-size: 22px;
+    }
+
+    .plansFoot {
+        font-size: 22px;
+        width: 80%;
+    }
+
+    .contactCards .cardIcons i {
+        font-size: 40px;
+    }
+
+    .choosCssHouesImg2 {
+        width: 90% !important;
+        margin: auto !important;
+    }
+
+    .contactBannerSec {
+        padding: 40px 0px;
+    }
+
+    .contactBannerSec h4 {
+        font-size: 26px;
+    }
+
+    .contactBannerSec h5 {
+        font-size: 20px;
+    }
+
+    .formSec {
+        position: relative;
+        padding: 40px 0px;
+    }
+
+    .map {
+        margin-top: 30px;
+    }
+
+    .accordinFormSec {
+        padding: 30px 0px;
+    }
+
+    .formInner {
+        padding: 30px;
+    }
+
+    .accordinInner h4 {
+        font-size: 30px;
+    }
+
+    .reviewInner h4 {
+        font-size: 38px;
+    }
+
+    .starsInner p {
+        font-size: 32px;
+    }
+
+    .starsInner h5 {
+        font-size: 24px;
+    }
+
+    .digmarkForm {
+        padding: 15px;
+
+    }
+
+    .digmarkFormInner .digtInput {
+        margin: 8px 0px;
+        padding: 12px;
+    }
+
+    .heading h4 {
+        font-size: 26px;
+    }
+
+    .heading p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .planCase h2 {
+        font-size: 34px;
+    }
+
+    .sections {
+        padding: 25px 0px;
+    }
+    .footerInner p{
+        margin: 15px 0px;
+        max-width: 100%;
+    }
+    .bannerSec {
+        padding: 25x 0px;
+    }
+    .postinner h4 {
+        font-size: 30px;
+    }
+    .postinner img {
+       
+        width: 85%;
+    }
+    .digitalMarkInner h4 {
+        width: 100%;
+    }
+
+    .classCards h2 {
+        font-size: 36px;
+    }
+
+    .bannerInner h1 {
+        font-size: 30px;
+    }
+
+    .upWorkinner h4 {
+        font-size: 26px;
+    }
+
+    .webServices_Sec {
+        padding: 30px 0px;
+    }
+
+    .upWorkinnerSec {
+        padding: 20px 0px;
+    }
+
+    .classCards h5 {
+        font-size: 32px;
+    }
+
+    .headSec h4 {
+        font-size: 32px;
+    }
+
+    .buisIndieaInner h4 {
+        font-size: 30px;
+    }
+
+    .buisIndieaInner {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .plansSection {
+        padding: 30px 0px 10px 0px;
+    }
+
+    .testcards {
+        padding: 00px;
+        width: 100%;
+    }
+
+    .heading h3 {
+        font-size: 30px;
+    }
+
+    .portInnerContent h4 {
+        font-size: 34px;
+    }
+
+    .requestQuoteinner h5 {
+        font-size: 26px;
+    }
+
+    .plansFoot {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .choosCssHouesContent h3 {
+        font-size: 24px;
+    }
+
+    .contactCards .cardIcons {
+        width: 110px;
+        height: 110px;
+    }
+
+    .contactCards .cardIcons i {
+        font-size: 38px;
+    }
+
+    .choosCssHouesImg2 {
+        width: 100% !important;
+        margin: auto !important;
+    }
+
+    .contactBannerSec h4 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .contactBannerSec h5 {
+        font-size: 18px;
+    }
+
+    .contactBannerSec {
+        padding: 30px 0px;
+    }
+
+    .formSec {
+        position: relative;
+        padding: 30px 0px;
+    }
+
+    .testimonialHead h3 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .reviweContent p {
+        width: 95%;
+    }
+
+    .formHead h4 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .accordinFormSec {
+        padding: 20px 0px;
+    }
+
+    .formInner {
+        padding: 20px;
+    }
+
+    .accordionhead h3 {
+        font-size: 22px;
+    }
+
+    .accordinInner h4 {
+        font-size: 28px;
+    }
+
+    .reviewInner h4 {
+        font-size: 34px;
+    }
+
+    .starsInner p {
+        font-size: 28px;
+    }
+
+    .starsInner .starsImg img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .starsInner h5 {
+        font-size: 22px;
+    }
+
+    .digmarkFormInner {
+        padding: 0px 10px;
+    }
+
+
+}
